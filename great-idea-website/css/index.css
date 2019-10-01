@@ -73,24 +73,30 @@ body{
 .navigation{
 	box-sizing: border-box;
 	display: inline-block;
+	position: absolute;
 	width: 100%;
 	color: gray;
+	z-index: 999;
 }
 .navigation a{
 	margin-left: -50px;
-	padding: 80px;
+	padding: 40px 80px;
 	color: gray;
 	text-decoration: none;
+	font-weight: bold;
+	/* text-shadow: 2px 2px 3px lightslategray; */
 }
 .navigation a:hover{
+	/* display: inline-block; */
 	background-color: aqua;
 	border-radius: 15px 50px;
 	color: white;
-	text-shadow: 2px 2px 4px #000000;
+	/* text-shadow: 2px 2px 4px #000000; */
+	/* z-index: 999; */
 }
 .navigation .logo{
 	display: inline-block;
-	
+	/* z-index: -1; */
 	margin-left: 50px;
 	margin-right: 0px;
 	margin-bottom: -10px;
@@ -116,6 +122,7 @@ h1{
 	font-size: 70px;
 	text-align: center;
 	position: relative;
+	text-shadow: 5px 5px 3px gray;
 }
 .button{
 	border: 1px solid black;
@@ -125,11 +132,19 @@ h1{
 	margin: 0 auto;
 	margin-bottom: 50px;
 	display: inline-block;
+	box-shadow: 3px 3px 5px gray;
+	font-weight: bold;
+	border-radius: 180px
 }
 .button:hover{
-	background-color: rgb(46, 46, 160);
-	color: white;
-	text-size-adjust: 125%;
+	background-color:rgba(0, 255, 255, 0.8);
+	color: slategray;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 white,
+		1px -1px 0 white,
+		-1px 1px 0 white,
+		1px 1px 0 white;
 }
 .header-img{
 	box-sizing: border-box;
@@ -223,4 +238,7 @@ footer{
 	padding: 20px;
 	/* margin-left: auto;
 	margin-right: auto; */
+}
+h2{
+	text-shadow: 5px 5px 3px gray;
 }
